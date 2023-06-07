@@ -499,12 +499,12 @@ body {
         .contact .info{
             height: 300px;
         }
-        .contact .label, .link{
+        .contact .label{
             font-size: 20px;
             
         }
         .contact .link{
-            padding-left: 0px;
+            padding-left: 0;
             font-size: 17px;
         }
 

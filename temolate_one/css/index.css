@@ -499,9 +499,15 @@ body {
         .contact .info{
             height: 300px;
         }
-        .contact .label,.link{
+        .contact .label, .link{
             font-size: 20px;
+            
         }
+        .contact .link{
+            padding-left: 0px;
+            font-size: 17px;
+        }
+
         .contact .social{
             width: 300px;
             font-size: 8px;
@@ -510,6 +516,13 @@ body {
             font-size: 10px;
         }
         }
+        @media (min-width:767px)and (max-width:1000px){
+
+            .contact .link{
+                padding-left: 10px;
+                font-size: 40px;
+            }
+            }
 /* End contact */
 /* Start Footer */
     .footer{

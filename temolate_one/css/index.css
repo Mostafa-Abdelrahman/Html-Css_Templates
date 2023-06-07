@@ -237,7 +237,7 @@ body {
     }
 }
 /* End special heading */
-/* Start Skills */
+/* Start skills */
     .skills{
         padding-top: var(--section-padding);
         padding-bottom: var(--section-padding);
@@ -516,7 +516,7 @@ body {
             font-size: 10px;
         }
         }
-        @media (min-width:767px)and (max-width:1000px){
+        @media (min-width:767px) and (max-width:1000px){
 
             .contact .link{
                 padding-left: 10px;

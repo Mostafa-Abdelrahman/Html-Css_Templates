@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:url("../image/pexels-shvets-production-7195208.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto Mono', monospace;
+}
+/* 69, 4, 75 */
+:root{
+    --login_color: rgba(96, 39, 255, 0.281);
+}
+.written{
+display: inline;
+position: absolute;
+font-family: 'Pacifico', cursive;
+font-size:10vh;
+left: 15%;
+top: 30%;
+padding: 10px;
+border-bottom:3px solid rgba(174, 0, 255, 0.822);
+    border-radius: 100px;
+    color: #f4bbff;
+}
+
+
+.form{
+    background-color: var(--login_color);
+    width: 30%;
+    height: 80%;
+    border-radius: 10px;
+    position: absolute;
+    top:10%;
+    right: 3%;
+    display: grid;
+    grid-template-rows:200px 1fr 100px ;
+    
+}
+.form h2 {
+    display: inline;
+    width: 100px;
+    padding: 5px;
+    font-size: 30px;
+    background:none;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.form h2:hover{
+    transform: scale(1.5) rotate(360deg);
+    transition: 0.5s;
+}
+.form .boxs {
+    background: none;
+    display: grid;
+    align-content: space-evenly;
+    width:80%;
+    height: 20%;
+    margin: auto;
+}
+.form .boxs input{
+    background: none;
+    border: 2px solid rgb(204, 23, 144) ;
+    color: white;
+    border-radius:10px;
+    padding: 20px;
+    margin: 10px;
+}
+.form .boxs input:focus{
+    border: 2px solid rgb(173, 169, 169);
+    outline: none;
+}
+.form .boxs input:hover{
+    border: 2px solid rgb(173, 169, 169);
+    transition: 0.7s;
+
+}
+.button{
+    display: inline ;
+    width: 30%;
+    text-align: center;
+    border: none ;
+    border-radius: 10px;
+    color: #eee;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(67, 23, 109, 0.829);
+    transition: 0.7s;
+}
+
+.button:hover{
+    transform: scale(1.2) ;
+    
+    transition: 0.7s;
+    color: rgb(149, 50, 158);
+    background-color: #eee;
+    
+}
+
+.link{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 50px;
+}
+.link a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    transition: 0.7s;
+
+}
+.link a:hover{
+    transform: scale(1.2);
+    color: #b44343;
+    transition: 0.7s;
+
+}

@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.page{
+    display: grid;
+    height: 100vb;
+    background-color: #eee;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+    "logo nav  nav nav nav nav nav nav nav nav" 
+    "cont cont cont cont cont cont cont cont cont side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2{
+    grid-area: logo;
+    color: white;
+    background-color: rgb(64, 64, 75);
+    padding: 10px;
+}
+
+nav{
+    grid-area:nav;
+    color: white;
+    background-color: rgb(123, 86, 156);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+section{
+    grid-area: cont;
+    color: white;
+    background-color: #7c75e0;
+}
+
+aside{
+    grid-area: side;
+    background-color: rgb(44, 44, 151);
+    color: white;
+}
+footer{
+    grid-area: foot;
+    color: white;
+    background-color: #1f1e3a;
+    padding: 15px;
+}

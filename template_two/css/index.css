@@ -1,0 +1,157 @@
+/* Start variable */
+:root{
+    --main_color:#19c8fa;
+}
+/* End variable */
+/* Start Global rules */
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Work Sans', sans-serif;
+        background-color: #000000;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    ul li{
+        text-decoration:none ;
+    }
+        
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 97px;
+    }
+    /* small */
+    @media (min-width: 768px) {
+        .container{
+            width: 750px;
+        }
+    }
+    /* medium */
+    @media (min-width: 992px) {
+        .container{
+            width: 970px;
+        }
+    }
+    /* larg */
+    @media (min-width: 1200px) {
+        .container{
+            width: 1170px;
+        }
+    }
+    
+/* End Global rules */
+
+/* Start Header  */
+    header{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    header .container{
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    header .container::after{
+        content: "";
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        height: 1px;
+        width: calc(100% - 30px);
+        bottom:0px;
+        
+
+    }
+    header nav{
+        flex: 1;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+    }
+    header nav .toggle-menu{
+        color: white;
+        font-size: 22px;
+        display: none;
+    }
+
+    @media (max-width :768px){
+        header nav .toggle-menu{
+            display: block;
+            margin: 30px;
+        }
+    }
+    header nav ul{
+        display: flex;
+        margin-right: 5%;
+    }
+    @media (max-width :768px){
+        header nav ul{
+            display: none;
+        }
+        header nav .toggle-menu:hover + ul{
+            display: flex;
+            margin-right: 5%;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: rgb(0 0 0/50%);
+        }
+        header nav ul li a{
+            padding: 15px !important;
+        }
+    }
+    header nav ul li a{
+        display: block;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 40px 10px;
+        font-size: 14px;
+        transition:1s;
+        position: relative;
+        z-index: 2;
+        
+    }
+    header nav ul li a:hover{
+        color: var(--main_color);
+        border-bottom: 1px solid var(--main_color);
+        
+    }
+    header nav .form{
+        font-size: 20px;
+        padding: 10px;
+        position: relative;
+        color: white;
+    }
+    header nav .form::before{
+        position: absolute;
+        content: "";
+        height: 70%;
+        top: 15%;
+        width: 1px;
+        background-color: rgb(255, 255, 255);
+        left: 0;
+    }
+    header .logo img{
+        height: 40px;
+    }
+/* End Header  */

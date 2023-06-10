@@ -57,6 +57,50 @@
     
 /* End Global rules */
 
+/* Start components */
+    .main-heading{
+        text-align: center;
+    }
+    .main-heading h2{
+        font-weight: normal;
+        font-size: 40px;
+        position: relative;
+        margin-bottom: 70px;
+        text-transform: uppercase;
+    }
+
+    .main-heading h2::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 2px solid #333;
+        bottom: -37px;
+        background-color: white;
+    }
+
+    .main-heading h2::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        bottom: -30px;
+        width: 130px;
+        height: 2px;
+    }
+    .main-heading p{
+        width: 550px;
+        margin: 0 auto 100px;
+        max-width: 100%;
+        line-height: 2;
+        color: #777;
+    }
+/* End components */
+
 /* Start Header  */
     header{
         position: absolute;
@@ -270,3 +314,114 @@
     border-color: var(--main_color);
 }
 /* End Landing  */
+
+/* Start Services */
+    .services{
+        padding-top: 100px;
+        padding-bottom:100px ;
+    }
+    .services-content .box{
+        display: flex; 
+    }
+    @media (max-width:767px){
+        .services-content .box{
+            flex-direction: column;
+            text-align: center;
+        }
+        .services-content .box i{
+            transform: translatex(25px);
+            margin-bottom: 20px;
+        }
+    }
+    @media(min-width:768px){
+        .services .services-content{
+            display:grid ;
+            grid-template-columns: repeat(auto-fill ,minmax(450px,1fr));
+            column-gap:60px ;
+            row-gap: 60px;
+        }
+    }
+    .services-content .box .text{
+        
+    }
+    .services-content .box i{
+        color: #646268;
+        margin-right: 50px;
+    }
+
+    .services-content .box h3{
+        margin-bottom: 10px;
+        color: var(--main_color);
+    }
+
+    .services-content p{
+        line-height: 2;
+        color: #777;
+        margin-bottom: 30px;
+    }
+/* End Services */
+
+/* Start Design */
+.design{
+    padding-top: 100px;
+    padding-bottom:100px;
+    margin-bottom: 100px;
+    height: 600px;
+    position: relative;
+    background-image: url(../image/SL-043021-42650-28.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.design::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/40%);
+}
+.design .design-content
+{
+    position: relative;
+    z-index: 2;
+    background-color:#19c9fa36;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+@media (max-width:767px){
+    .design .design-content{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.design h2{
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.design ul{
+    padding-left: 40px;
+}
+
+.design ul li{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.design ul li i{
+    margin-right: 20px;
+}
+/* End Design */

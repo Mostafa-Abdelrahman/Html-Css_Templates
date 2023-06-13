@@ -757,14 +757,60 @@
     height: 14px;
     border-radius: 50%;
     margin-right: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
 }
 
-.our-skills .right .bullets ul li.active{
+.our-skills .right .bullets ul .act{
     background-color: var(--main_color);
     border-color: var(--main_color);
 }
-.our-skills .skills{
+
+.our-skills .skills .prog-box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our-skills .skills .prog-box h4{
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.our-skills .skills .prog{
+height: 30px;
+width: 100%;
+background-color: #dedadc;
+margin-bottom: 30px;
+}
+
+.our-skills .skills .prog span{
+   display: block;
+   height: 100%;
+   background-color: var(--main_color);
+   position: relative;
+}
+.our-skills .skills .prog span::before{
+position: absolute;
+content: attr(data-progress);
+color: white;
+font-size: 14px;
+font-weight: 300;
+top: -125%;
+right: -20px;
+border-radius: 4px;
+padding: 5px 15px;
+height: fit-content;
+width: fit-content;
+background-color: rgb(0, 0, 0);
+}
+.our-skills .skills .prog span::after{
+    content: "";
+    position: absolute;
+    border: 10px solid black;
+    border-color: black transparent transparent transparent;
+    top: -50%;
+    right:-10px;
 
 }
 /* End Skills */
